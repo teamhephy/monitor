@@ -11,9 +11,15 @@ spec:
   updateStrategy:
     type: RollingUpdate
   {{- end }}
+  selector:
+    matchLabels:
+      app: deis-monitor-telegraf
+      heritage: deis
   template:
     metadata:
+      name: deis-monitor-telegraf
       labels:
+        heritage: deis
         app: deis-monitor-telegraf
     spec:
       serviceAccount: deis-monitor-telegraf
