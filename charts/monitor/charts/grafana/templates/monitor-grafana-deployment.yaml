@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: deis-monitor-grafana
-        image: quay.io/{{.Values.org}}/grafana:{{.Values.docker_tag}}
+        image: {{.Values.org}}/grafana:{{.Values.docker_tag}}
         imagePullPolicy: {{.Values.pull_policy}}
 {{- if or (.Values.limits_cpu) (.Values.limits_memory)}}
         resources:
