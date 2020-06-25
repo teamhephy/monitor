@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: deis-monitor-influxdb
-        image: quay.io/{{.Values.org}}/influxdb:{{.Values.docker_tag}}
+        image: {{.Values.org}}/influxdb:{{.Values.docker_tag}}
         imagePullPolicy: {{.Values.pull_policy}}
 {{- if or (.Values.limits_cpu) (.Values.limits_memory)}}
         resources:
