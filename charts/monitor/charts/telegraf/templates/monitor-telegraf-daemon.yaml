@@ -3,6 +3,7 @@ kind: DaemonSet
 metadata:
   name: deis-monitor-telegraf
   labels:
+    app: deis-monitor-telegraf
     heritage: deis
   annotations:
     component.deis.io/version: {{ .Values.docker_tag }}
@@ -14,12 +15,9 @@ spec:
   selector:
     matchLabels:
       app: deis-monitor-telegraf
-      heritage: deis
   template:
     metadata:
-      name: deis-monitor-telegraf
       labels:
-        heritage: deis
         app: deis-monitor-telegraf
     spec:
       serviceAccount: deis-monitor-telegraf
