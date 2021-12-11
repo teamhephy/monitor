@@ -20,6 +20,10 @@ spec:
       labels:
         app: deis-monitor-telegraf
     spec:
+{{- with .Values.global.affinity }}
+      affinity:
+{{ toYaml . | indent 8 }}
+{{- end }}
       serviceAccount: deis-monitor-telegraf
       containers:
         - name: deis-monitor-telegraf

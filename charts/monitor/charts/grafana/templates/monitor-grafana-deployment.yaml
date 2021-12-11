@@ -18,6 +18,10 @@ spec:
     matchLabels:
       app: deis-monitor-grafana
   template:
+{{- with .Values.global.affinity }}
+      affinity:
+{{ toYaml . | indent 8 }}
+{{- end }}
     metadata:
       labels:
         app: deis-monitor-grafana

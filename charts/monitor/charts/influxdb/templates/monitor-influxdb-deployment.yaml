@@ -19,6 +19,10 @@ spec:
       labels:
         app: deis-monitor-influxdb
     spec:
+{{- with .Values.global.affinity }}
+      affinity:
+{{ toYaml . | indent 8 }}
+{{- end }}
       containers:
       - name: deis-monitor-influxdb
         image: {{.Values.org}}/influxdb:{{.Values.docker_tag}}
