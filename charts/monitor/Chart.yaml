@@ -1,6 +1,8 @@
+apiVersion: v2
 name: monitor
 home: https://github.com/teamhephy/monitor
-version: 2.11.5
+version: 2.11.6
 description: Monitoring for Hephy Workflow.
 maintainers:
-  - email: team@teamhephy.com
+- name: Team Hephy
+  email: team@teamhephy.com
