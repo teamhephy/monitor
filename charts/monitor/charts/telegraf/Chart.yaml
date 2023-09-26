@@ -1,6 +1,6 @@
 name: telegraf
 home: https://github.com/teamhephy/monitor/tree/master/telegraf
-version: 2.11.3
+version: 2.11.4
 description: Monitoring for Deis Workflow.
 maintainers:
   - email: team@teamhephy.com
