@@ -1,7 +1,7 @@
 grafana:
   org: "hephy"
-  pull_policy: "Always"
-  docker_tag: canary
+  pull_policy: "IfNotPresent"
+  docker_tag: v2.11.2
   allow_sign_up: "true"
   # limits_cpu: "100m"
   # limits_memory: "50Mi"
@@ -11,8 +11,8 @@ grafana:
     size: 5Gi
 influxdb:
   org: "hephy"
-  pull_policy: "Always"
-  docker_tag: canary
+  pull_policy: "IfNotPresent"
+  docker_tag: v2.11.2
   # limits_cpu: "100m"
   # limits_memory: "50Mi"
   url: "my.influx.url"
@@ -25,8 +25,8 @@ influxdb:
     size: 20Gi
 telegraf:
   org: "hephy"
-  pull_policy: "Always"
-  docker_tag: canary
+  pull_policy: "IfNotPresent"
+  docker_tag: v2.11.2
   # limits_cpu: "100m"
   # limits_memory: "50Mi"
 

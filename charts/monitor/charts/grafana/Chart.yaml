@@ -1,6 +1,6 @@
 name: grafana
 home: https://github.com/teamhephy/monitor/tree/master/grafana
-version: <Will be populated by the ci before publishing the chart>
+version: 2.11.3
 description: Monitoring for Hephy Workflow.
 maintainers:
   - email: team@teamhephy.com
